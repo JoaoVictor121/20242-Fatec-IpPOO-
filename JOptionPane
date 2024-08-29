@@ -1,0 +1,14 @@
+import javax.swing.JOptionPane;
+pubic class SomarDoisNumerosV2{
+  static public void main (String args [] ){
+    //declaração de vaiáveis 
+    double a, b, resultado;
+    a = Double.parseDouble(JOptionPane.showInputDialog("Digite um valor"));
+    b = Double.parseDouble(JOptionPane.showInputDialog("Digite outro valor"));
+    resultado = a + b;
+    JOptionPane.showMessageDialog(
+      null, 
+      String.format("%f + %f = %f" , a, b, resultado));
+
+  } 
+}
